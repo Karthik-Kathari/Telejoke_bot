@@ -18,7 +18,7 @@ bot.addListener('message', (msg) => {
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id; // Get the chat ID from the message
-  bot.sendMessage(chatId, "Welcome, How can i help you today!"); // Send a welcome message
+  bot.sendMessage(chatId, "Welcome, how can I help you today!\n\nTry /joke to hear a fun joke."); // Send a welcome message
 })
 
 bot.onText(/\/joke/,async (msg) => {
