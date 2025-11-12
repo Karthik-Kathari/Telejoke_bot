@@ -4,19 +4,19 @@ A fun, lightweight Telegram bot that delivers random jokes instantly! Built with
 
 ## 🌟 Features
 
-* /start → Welcomes users
+- /start → Welcomes users
   and shows quick buttons.
-* /joke → Sends a random
+- /joke → Sends a random
   joke from the Official Joke API.
-* /help → Shows how to
+- /help → Shows how to
   use the bot in a friendly, formatted guide.
-* /about → Displays bot
+- /about → Displays bot
   info and credits.
-* Smart natural replies — users an simply
+- Smart natural replies — users an simply
   type “hi”, “hello”, or “tell me a joke” without using slash commands.
-* Inline buttons: 😂 Another (fetches a new joke) and 🛑 Stop (stops and
+- Inline buttons: 😂 Another (fetches a new joke) and 🛑 Stop (stops and
   shows a positive quote).
-* Inline query support — type @tele611bot
+- Inline query support — type @tele611bot
   in any Telegram chat to get jokes without leaving the chat. Automatic joke
   logging (jokes.log).
 
@@ -50,7 +50,7 @@ npm install
    and add:
 
 ```
-BOT_TOKEN=your_telegram_bot_token 
+BOT_TOKEN=your_telegram_bot_token
 WEBHOOK_URL= PORT=3000
 ```
 
@@ -63,17 +63,16 @@ npm start
 
 ## 💬 Example Commands
 
-* /start — Start the bot and get a greeting
-* /joke — Get a random joke instantly
-* /help — See how to use the bot
-* /about — About Tele-Joke Bot
+- /start — Start the bot and get a greeting
+- /joke — Get a random joke instantly
+- /help — See how to use the bot
+- /about — About Tele-Joke Bot
 
 ## 🧑‍💻 Owner & Developer
 
 **Karthik Kathari**
 
 [🔗 LinkedIn Profile](https://www.linkedin.com/in/karthikkathari/)
-
 
 ## 📜 License
 
