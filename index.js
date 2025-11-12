@@ -1,11 +1,14 @@
 // index.js
-require('dotenv').config();
-const TelegramBot = require('node-telegram-bot-api');
-const express = require('express');
-const bodyParser = require('body-parser');
-const axios = require('axios');
-const fs = require('fs');
-const path = require('path');
+import dotenv from 'dotenv';
+import TelegramBot from 'node-telegram-bot-api';
+import express from 'express';
+import bodyParser from 'body-parser';
+import axios from 'axios';
+import fs from 'fs';
+import path from 'path';
+
+// Load environment variables
+dotenv.config();
 
 const TOKEN = process.env.BOT_TOKEN;
 if (!TOKEN) {
