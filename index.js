@@ -7,6 +7,7 @@ import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import http from 'http';
 
 // Load .env values into process.env
 dotenv.config();
@@ -387,8 +388,7 @@ if (USE_WEBHOOK) {
   process.on('SIGTERM', shutdown);
 }
 
-const http = require('http');
-
+// -----------------------------//
 const PORT2 = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
