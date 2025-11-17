@@ -386,3 +386,21 @@ if (USE_WEBHOOK) {
   process.on('SIGINT', shutdown);
   process.on('SIGTERM', shutdown);
 }
+
+const http = require('http');
+
+const PORT2 = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  // simple healthcheck and root response so Render sees an open port
+  if (req.url === '/health' || req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    return res.end('ok');
+  }
+  res.writeHead(404);
+  res.end();
+});
+
+server.listen(PORT2, () => {
+  console.log(`HTTP server listening on port ${PORT2}`);
+});
